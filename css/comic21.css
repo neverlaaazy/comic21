@@ -62,7 +62,9 @@
 }
 
 .cloud-img {
+    filter: blur(2px);
     width: 100%;
+    transition: all 0.4s cubic-bezier(0.6, 0, 0.05, 0.98);
 }
 
 .comic__item1 .comic__img {
@@ -109,7 +111,56 @@
 .comic__item5:focus .comic__img{
     filter: blur(0px);
 }
+.comic__item5 .cloud1 {
+    position: absolute;
+    width: 200px;
+    top: -40px;
+    left: 0;
+}
 
+.comic__item5 .cloud-img1 {
+    transform: scaleX(-1);
+}
+
+.comic__item5 .cloud2 {
+    position: absolute;
+    width: 200px;
+    right: 25%;
+    bottom: 10px;
+    transform: scaleX(-1);
+}
+
+.comic__item5 .cloud-img2 {
+    transform: rotate(180deg);
+}
+.comic__item5:hover .cloud-img,
+.comic__item5:focus .cloud-img{
+    filter: blur(0px);
+}
+.comic__item5 .text1 {
+    position: absolute;
+    top: 90px;
+    right: 65px;
+    font-size: 12px;
+
+}
+
+.comic__item5 .text2 {
+    position: absolute;
+    left: 60px;
+    bottom: 95px;
+    font-size: 12px;
+    transform: scaleX(-1);
+    
+}
+.cloud-text{
+    filter: blur(2px);
+    transition: all 0.4s ease-in-out;
+}
+.comic__item5:hover .cloud-text,
+.comic__item5:focus .cloud-text{
+    filter: blur(0px);
+}
 .comic__item6 .comic__img{
     filter: blur(2px);
     transition: all 0.4s ease-in-out;
